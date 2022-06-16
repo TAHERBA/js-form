@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+   <div class="container">
+       <div class="title">Formulaire</div>
+    <form id="form">
+        <div class="userdetails">
+            <div class="inputbox">
+                <label for="name" > Votre Nom</label>
+        <input type="text" placeholder="votre nom" required id="nom">       
+            </div>
+            <div class="inputbox">
+                <label for="sname" >Votre Prénom</label>
+        <input type="text" placeholder="votre prénom" required id="sname">
+            </div>
+            <div class="selectbox">
+                <p>Votre Ville</p>
+                <select name="ville" id="ville">
+                    <option selected disabled>choisir votre ville</option>
+                    <option value="tunis">Tunis</option>
+                    <option value="sfax">Sfax</option>
+                    <option value="nabeul">Nabeul</option>
+                    <option value="ariana">Ariana</option>
+                    <option value="benarous">BenArous</option>
+                    <option value="beja">Beja</option>
+                    <option value="bizert">Bizert</option>
+                    <option value="tataouine">Tataouine</option>
+                    <option value="tozeur">Tozeur</option>
+                    <option value="jandouba">Jandouba</option>
+                    <option value="zaghouen">Zaghouen</option>
+                    <option value="seliana">Seliana</option>
+                    <option value="sousse">Sousse</option>
+                    <option value="sidibouzid">SidiBouzid</option>
+                    <option value="gabes">Gabes</option>
+                    <option value="gbelli">Gbelli</option>
+                    <option value="gassrine">Gassrine</option>
+                    <option value="gafsa">Gafsa</option>
+                    <option value="kairouan">Kairouan</option>
+                    <option value="kef">Kef</option>
+                    <option value="medenin">Medenin</option>
+                    <option value="mahdia">Mahdia</option>
+                    <option value="mannouba">Mannouba</option>
+                    <option value="mounastir">Mounastir</option>
+                </select>
+
+            </div>
+            <div class="inputbox">
+                <label for="age">Votre Age</label>
+                <input type="text" placeholder="age" required id="age">
+            </div>
+            <div class="radiobtn">
+                <label> Votre Sexe: </label>
+                <input type="radio" id="homme" name="sex">
+                <label for="homme" >HOMME</label>
+                <input type="radio" id="femme" name="sex"> 
+                <label for="femme">FEMME</label>
+            </div>
+            
+            <div class="inputbox">
+                <label>Message</label>
+                <textarea placeholder="écrit votre message..."></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit">
+            
+        </div>
+        <div id="error"></div>
+     </form>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html> 
