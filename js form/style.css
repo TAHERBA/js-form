@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#FFCC8F,#FFDAAF);
+    padding: 20px;
+}
+.container{
+    margin-top: 55px;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(135deg,#FFCC8F,#FFDAAF);
+}
+.container form .inputbox{
+
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container form .inputbox label{
+    margin-bottom: 5px;
+    font-style: italic;
+}
+.container form .inputbox input{
+    height: 30px;
+    border-radius: 3px;
+    border-color: whitesmoke;
+    padding: 10px;
+}
+.container form .inputbox textarea{
+    border-radius: 3px;
+    border: solid 3px gray;
+    background-color: whitesmoke;
+    padding: 10px;
+    resize: none;
+}
+form .button input{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 50px;
+    width: 69%;
+    outline: none;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#FFCC8F,#FFDAAF);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#FFCC8F,#FFDAAF);
+}
+.container form .selectbox{
+
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container form .selectbox p{
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 17px;
+}
+.container form .selectbox select{
+    height: 30px;
+    border-radius: 3px;
+    border-color: rgb(170, 167, 167);
+    padding: 5px;
+}
+.container form .radiobtn{
+    display: inline;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container form .radiobtn label{
+    margin-bottom: 5px;
+    font-style: italic;
+    font-size: 17px;
+}
+form #error{
+    text-align: center;
+    color: red;
+    font-size: small;
+    margin-top: 10px;
+}
